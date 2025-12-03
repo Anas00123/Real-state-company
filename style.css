@@ -38,7 +38,7 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 .icon{
     color: #d8d9d9;
@@ -135,9 +135,11 @@ body {
 }
 .hero-content h3, h1{
     color: #fff;
+    font-size: 4.5rem;
 }
 .hero-content p{
     color: #fff;
+    font-size: 1.5rem;
 }
 .cta-btn {
     padding: 18px 40px;
@@ -205,14 +207,20 @@ body {
     margin: 0 auto 30px;
     line-height: 1.6;
 }
+    
+    .linez {
+        width:1.5rem;
+        height: 3px;
+        background: #199a9c;
+        margin: 0 1px 50px;
+    }
 
-.line {
-    width: 70px;
-    height: 2px;
-    background: #6ccacb;
-    margin: 0 auto 50px;
+.service-box:hover .linez{
+    width:3rem;
+    height: 3px;
+    background: #199a9c;
+    margin: 0 1px 50px;
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -367,11 +375,24 @@ body {
     margin-bottom: 20px;
 }
 
-.line {
-    width: 60px;
-    height: 2px;
+.linez {
+    width: 20px;
+    height: 0.2rem;
     background: #1aa6a6;
-    margin: 20px 0;
+    
+     /* transition: transform 1s ease; */
+   
+}
+.testimonial-section:hover .linez
+{
+    width: 150px;
+    height: 0.3rem;
+    transition: transform 1s ease;
+    transform: scaleX(2);
+    background: #1aa6a6;
+    margin-left:3rem;
+     
+
 }
 
 .testimonial-left p {
